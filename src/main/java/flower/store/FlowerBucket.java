@@ -12,7 +12,7 @@ public class FlowerBucket {
         packList.add(pack);
         price += pack.getPrice();
     }
-    public double getPrice(){
+    public double getPrice() {
         return price;
     }
 }

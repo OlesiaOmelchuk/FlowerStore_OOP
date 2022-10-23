@@ -16,7 +16,7 @@ public class Flower {
         this.price = price;
         this.flowerType = flowerType;
     }
-    public Flower(){
+    public Flower() {
         this.sepalLength = 0;
         this.color = null;
         this.price = 0;

@@ -7,8 +7,9 @@ import org.junit.jupiter.api.Assertions;
 import java.util.ArrayList;
 
 public class StoreTest {
-    private Store store;
     private static final int QUANTITY = 5;
+    private Store store;
+
 
     @BeforeEach
     public void init() {

@@ -13,9 +13,10 @@ public class Store {
     public ArrayList search(Flower targetFlower) {
 //        Returns list of buckets that contain given flower
         ArrayList<FlowerBucket> desirableBuckets = new ArrayList<>();
-        for(FlowerBucket bucket: bucketsList){
-            for(FlowerPack pack: bucket.getPackList()){
-                if(pack.getFlower().getFlowerType() == targetFlower.getFlowerType()){
+        for (FlowerBucket bucket: bucketsList) {
+            for (FlowerPack pack: bucket.getPackList()) {
+                if (pack.getFlower().getFlowerType() ==
+                        targetFlower.getFlowerType()) {
                     desirableBuckets.add(bucket);
                     break;
                 }

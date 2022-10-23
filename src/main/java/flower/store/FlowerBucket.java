@@ -8,7 +8,7 @@ public class FlowerBucket {
     FlowerBucket(){
         price = 0;
     }
-    public void add(FlowerPack pack){
+    public void add(FlowerPack pack) {
         packList.add(pack);
         price += pack.getPrice();
     }

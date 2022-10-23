@@ -8,9 +8,10 @@ import java.util.ArrayList;
 
 public class StoreTest {
     private Store store;
+    private static final int QUANTITY = 5;
 
     @BeforeEach
-    public void init(){
+    public void init() {
         store = new Store();
     }
 
@@ -18,8 +19,8 @@ public class StoreTest {
     public void testSearch() {
         Rose rose = new Rose();
         Tulip tulip = new Tulip();
-        FlowerPack rosePack = new FlowerPack(rose, 5);
-        FlowerPack tulipPack = new FlowerPack(tulip, 7);
+        FlowerPack rosePack = new FlowerPack(rose, QUANTITY);
+        FlowerPack tulipPack = new FlowerPack(tulip, QUANTITY);
 //        bucket of roses
         FlowerBucket bucketRose = new FlowerBucket();
         bucketRose.add(rosePack);

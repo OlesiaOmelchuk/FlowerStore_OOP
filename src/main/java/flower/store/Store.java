@@ -15,8 +15,8 @@ public class Store {
         ArrayList<FlowerBucket> desirableBuckets = new ArrayList<>();
         for (FlowerBucket bucket: bucketsList) {
             for (FlowerPack pack: bucket.getPackList()) {
-                if (pack.getFlower().getFlowerType() ==
-                        targetFlower.getFlowerType()) {
+                if (pack.getFlower().getFlowerType()
+                        == targetFlower.getFlowerType()) {
                     desirableBuckets.add(bucket);
                     break;
                 }
